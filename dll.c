@@ -10,3 +10,6 @@ asm(".globl _ac_test\n\t"
     "_ac_test: .cfi_startproc\n\t"
     "jmp *_p\n\t"
     ".cfi_endproc\n\t");
+
+// this doesn't help it:
+// extern void ac_test();
