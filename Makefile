@@ -1,7 +1,7 @@
 CC:=LANG=C i686-w64-mingw32-gcc -Wall -g -Werror
 
 main.exe: main.c dll.dll
-	$(CC) main.c -o main.exe -Ldll
+	$(CC) main.c -L. -ldll -o main.exe
 
 
 dll.dll: dll.c
